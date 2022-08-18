@@ -1,0 +1,50 @@
+.form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-item {
+  padding: 1em 3em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.hex {
+  background-color: #fff;
+}
+
+.form-item {
+  background-color: #fff;
+}
+
+.form-item.rgb {
+  background-color: #1d2835;
+  color: #fff;
+}
+
+.form-item:nth-child(n + 2) {
+  margin-top: 0.6em;
+}
+
+.input-text {
+  width: 8.2em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: transparent;
+  text-align: center;
+}
+
+.input-text .hex {
+  background-color: inherit;
+}
+
+.input-text.rgb {
+  background-color: inherit;
+  color: inherit;
+}
