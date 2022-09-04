@@ -3,12 +3,12 @@ import React, { useState } from "react";
 function Converter(props) {
   const [hexData, setHexData] = useState("");
   const [state, setState] = useState({
-    bgColor: { backgroundColor: "#20B2AA" },
+    bgColor: { backgroundColor: "#FFFFFF" },
     newColor: "rgb(..., ..., ...)",
     styleColor: {
-      backgroundColor: "#20B2AA",
+      backgroundColor: "#FFFFFF",
       filter: "brightness(85%)",
-      color: "#ffffff",
+      color: "#000000",
     },
   });
 
@@ -50,9 +50,9 @@ function Converter(props) {
 
     if (hexValue.length < 7) {
       setState({
-        bgColor: { backgroundColor: "#20B2AA" },
+        bgColor: { backgroundColor: "#FFFFFF" },
         newColor: "rgb(..., ..., ...)",
-        styleColor: { backgroundColor: "#20B2AA", filter: "brightness(85%)" },
+        styleColor: { backgroundColor: "#FFFFFF", filter: "brightness(85%)" },
       });
     } else if (!isNaN(hexValue) || hexValue.length > 7) {
       setState({
@@ -78,12 +78,12 @@ function Converter(props) {
 
     if (hexValue === "") {
       setState({
-        bgColor: { backgroundColor: "#20B2AA" },
+        bgColor: { backgroundColor: "#ffffff" },
         newColor: "rgb(..., ..., ...)",
         styleColor: {
-          backgroundColor: "#20B2AA",
+          backgroundColor: "#ffffff",
           filter: "brightness(85%)",
-          color: "#ffffff",
+          color: "#000000",
         },
       });
     }
